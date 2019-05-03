@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d62a7bc0fb864cb78ac6f3a281c16847" Name="Diagram1" ZoomLevel="70" >
+        <EntityTypeShape EntityType="MinhaGestao.Cliente" Width="1.5" PointX="0.5" PointY="5.25" />
+        <EntityTypeShape EntityType="MinhaGestao.CarroOficina" Width="1.5" PointX="10.125" PointY="0.5" />
+        <EntityTypeShape EntityType="MinhaGestao.Carro" Width="1.5" PointX="10.125" PointY="5.25" />
+        <EntityTypeShape EntityType="MinhaGestao.Servico" Width="1.5" PointX="7" PointY="2.125" />
+        <EntityTypeShape EntityType="MinhaGestao.Parcela" Width="1.5" PointX="3.875" PointY="2.125" />
+        <EntityTypeShape EntityType="MinhaGestao.Venda" Width="1.5" PointX="3.75" PointY="5.5" />
+        <EntityTypeShape EntityType="MinhaGestao.CarroVenda" Width="1.5" PointX="6.875" PointY="5.5" />
+        <EntityTypeShape EntityType="MinhaGestao.Aluguer" Width="1.5" PointX="6.875" PointY="8" />
+        <EntityTypeShape EntityType="MinhaGestao.CarroAluguer" Width="1.5" PointX="10.125" PointY="8.625" />
+        <AssociationConnector Association="MinhaGestao.ClienteCarroOficina" />
+        <AssociationConnector Association="MinhaGestao.ClienteVenda" />
+        <AssociationConnector Association="MinhaGestao.ClienteAluguer" />
+        <AssociationConnector Association="MinhaGestao.AluguerCarroAluguer" />
+        <AssociationConnector Association="MinhaGestao.VendaCarroVenda" />
+        <InheritanceConnector ManuallyRouted="false" EntityType="MinhaGestao.CarroOficina">
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="MinhaGestao.CarroVenda" />
+        <InheritanceConnector EntityType="MinhaGestao.CarroAluguer" />
+        <AssociationConnector Association="MinhaGestao.CarroOficinaServico" />
+        <AssociationConnector Association="MinhaGestao.ServicoParcela" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
